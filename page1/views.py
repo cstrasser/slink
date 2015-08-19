@@ -1,3 +1,4 @@
 from django.shortcuts import render
 
-# Create your views here.
+class page1(response):
+    return render(respones,'page1.html',{})

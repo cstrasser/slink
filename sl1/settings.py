@@ -37,6 +37,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'page1',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -76,8 +77,12 @@ WSGI_APPLICATION = 'sl1.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'slink',
+        'USER': 'sa',
+        'PASSWORD': '****',
+        'HOST': '10.0.0.83',
+        'PORT': '5432',
     }
 }
 
